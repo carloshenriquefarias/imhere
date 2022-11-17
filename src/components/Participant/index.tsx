@@ -3,9 +3,10 @@ import {styles} from './styles';
 
 interface Props {
     name: string;
+    onRemove: () => void; //Tipando uma função
 }
 
-export function Participant({name}: Props) {  
+export function Participant({name, onRemove}: Props) {  
     
     function handleParticipantAdd(){
 
@@ -18,7 +19,7 @@ export function Participant({name}: Props) {
         </Text>
 
         {/* //Botão */}
-        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+        <TouchableOpacity style={styles.button} onPress={onRemove}>
             <Text style={styles.buttonText}>
                 -
             </Text>
