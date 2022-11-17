@@ -23,6 +23,10 @@ export function Home() {
 
     }
 
+    function Otherfunction(){
+        
+    }
+
     function handleParticipantRemove(name: string){
 
         //Estrutura: TÍTULO / ALERTA DA MENSAGEM / BOTOES
